@@ -1,0 +1,162 @@
+<!-- saved from url=(0031)http://www.33cm.cn/wap/vcard/89 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <title>[ 商务模板5号 ]</title>
+    <link href="../css/nreset.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/temp.css" rel="stylesheet" type="text/css">
+    <link href="../css/arrow.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<div class="pimg" data-bk=""
+     style="background:url(http://cm33.qiniudn.com/Uploadfile/Picture/2014/09/06/1410001669_540aeb05dac9b.jpg) no-repeat center 0; background-size:cover; top:0;  height:100%;  position:fixed"></div>
+<div style=" z-index:999" class="u-tel">
+    <a style="margin:0;" href="tel:1234567980"></a>
+</div>
+<span class="qrcode_icon"><img src="../images/qrico.jpg"></span>
+
+<div class="showqrcode" style="display: none;">
+    <ul class="qrimg">
+        <li style="display:block"><p>您好，这是我的微名片！</p></li>
+        <li><p class="f-fs1">您好，请长按选择识别二维码<br>即可保存到通讯录！</p></li>
+    </ul>
+    <div id="qrcode"></div>
+    <ul class="qrtab">
+        <li class="cur" data-info="http://www.33cm.cn/wap/vcard/89">打开微名片</li>
+        <li data-info="BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3A%E6%9D%8E%E5%BE%AE%E5%BE%AE%0ATITLE%3A%E6%8E%8C%E6%9F%9C%0ATEL%3BCELL%3A1234567980%0AEMAIL%3A38834518%40qq.com%0AADR%3Btype%3DWORK%3Btype%3Dpref%3A%3B%3B+%E7%A6%8F%E5%BB%BA%E7%9C%81%E5%8E%A6%E9%97%A8%E9%9B%86%E7%BE%8E%E5%8C%BA%E9%9B%86%E7%BE%8E%E5%B7%A5%E4%B8%9A%E5%8C%BA%3B%3B%3B%3B%0AORG%3A%E5%8E%A6%E9%97%A8%E5%92%AB%E5%B0%BA%E7%A7%BB%E5%8A%A8%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%0AEND%3AVCARD">
+            添加到通讯录
+        </li>
+    </ul>
+    <p class="closeqr">关闭</p>
+</div>
+<div class="g-wrap f-cb">
+    <div id="slider" style="height:100%; position:absolute; left:0; top:0; width:100%">
+        <!--<div class="animateYl animateYl01" id="arrow-h">
+            <span class="cyyle"><img alt="" src="../images/cycle02.png"></span>
+            <span class="bg"></span>
+        </div>-->
+        <div class="mpage f-oh ">
+            <p class="blank"></p>
+
+            <div class="conbox">
+                <p class="half twhite"></p>
+
+                <p class="half black"></p>
+
+                <div class="inbg">
+                    <p class="u-username"><span>李彦宏</span><i>百度首席执行官</i></p>
+
+                    <p class="company">北京百度信息技术有限公司</p>
+                    <ul>
+                        <li class=""><i class="fa fa-weixin fa-fw"></i>Robin</li>
+                        <li class=""><i class="fa fa-qq fa-fw"></i><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=38834518&amp;site=qq&amp;menu=yes">38834518</a>
+                        </li>
+                        <li class=""><i class="fa fa-envelope fa-fw"></i><a href="mailto:38834518@qq.com">38834518@qq.com</a>
+                        </li>
+                        <li class=""><i class="fa fa-link fa-fw"></i><a
+                                href="https://www.baidu.com">https://www.baidu.com</a></li>
+                    </ul>
+                    <p class="address">北京市海淀区上地十街10号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript">
+    var myScroll = null, arrowPos_h = true;
+    $(window).on('load', function () {
+        //dom 加载完成后显示图标
+        lazy_img();
+        $('#arrow-h').removeClass('hide_');
+    })
+
+    $(function () {
+
+        $('#slider').on('touchmove', function (e) {
+            // e.preventDefault();
+        })
+        $(".cmap").delegate(".mapbar", 'click', function () {
+            $(".cmap").animate({top: "100%"}, 600, function () {
+                $(this).hide();
+            });
+
+        })
+
+        $('#slider').swipe({
+
+            swipeLeft: function (event, direction, distance, duration, fingerCount) {
+                if (distance > 100) {
+                    $('#arrow-h').addClass('hide_');
+                    var $cp = $(".conpage");
+                    if ($(".conpage").is(':visible')) {
+                        $cp.animate({left: "-100%"}, 800, function () {
+                            $(this).hide();
+                            $(".u-tel").removeClass('tor').addClass('tol');
+                        });
+                    } else {
+                        $cp.css("left", "100%").show();
+                        $cp.animate({left: "0%"}, 800, function () {
+                            if (!myScroll) {
+                                myScroll = new IScroll('#wrapper');
+                                window.onload = myScroll;
+                            }
+                            $(".u-tel").removeClass('tol').addClass('tor');
+                        });
+                    }
+                    return false;
+                }
+            },
+            swipeRight: function (event, direction, distance, duration, fingerCount) {
+                if (distance > 100) {
+
+                    var $cp = $(".conpage");
+                    if ($(".conpage").is(':visible')) {
+                        $cp.animate({left: "100%"}, 800, function () {
+                            $(this).hide();
+                            $(".u-tel").removeClass('tor').addClass('tol');
+                        });
+                    } else {
+                        $cp.css("left", "-100%").show();
+                        $cp.animate({left: "0%"}, 800, function () {
+                            if (!myScroll) {
+                                myScroll = new IScroll('#wrapper');
+                                window.onload = myScroll;
+                            }
+                            $(".u-tel").removeClass('tol').addClass('tor');
+                        });
+                    }
+                    return false;
+                }
+            },
+            threshold: 10,
+            allowPageScroll: 'auto',
+            fingers: 'all'
+
+        });
+
+    });
+    $(function () {
+        $('#scroller a').each(function (index, element) {
+            var _this = $(this);
+            var _href = _this.attr('href');
+            _this.attr('data-href', _href);
+            _this.attr('href', 'javascript:void(0);');
+            _this.attr('ontouchend', 'this.s || window.open(this.dataset.href),this.s=0');
+            _this.attr('ontouchmove', 'this.s=1');
+        });
+    })
+</script>
+</body>
+</html>
