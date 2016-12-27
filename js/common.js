@@ -38,7 +38,7 @@
 	var qrcode=function(txt){
 		$('#qrcode').empty();
 		//$('#qrcode').qrcode({width: 200,height: 200,text: txt});
-		txts="http://www.33cm.cn/qrcode?size=7&text="+txt;
+		txts = txt;
 		$('#qrcode').html('<img src="../images/load.gif" style="max-width:100%" />');
 		$('<img />').on('load',function(){
 						$('#qrcode').find('img').attr('src',txts)
